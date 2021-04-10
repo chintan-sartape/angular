@@ -1,0 +1,35 @@
+.card-box {
+    float: left;
+    border: 0;
+    padding: 0;
+  }
+  .inner-box {
+    border: 1px solid rgba(0,0,0,.125);
+  }
+  .card-body {
+    padding: 0;
+  }
+  .card-header {
+    background-color: blue;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .card-img {
+    height: 75px;
+    width: 85px;
+    margin: 10px;
+  }
+  .card-location {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+  .card-footer-btn {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .btn-primary {
+    background-color: blue;
+    border-color: blue;
+  }

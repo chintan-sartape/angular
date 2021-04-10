@@ -1,0 +1,31 @@
+<div>
+        <h1>Customers</h1> 
+</div>
+
+<div>
+	<div class="row tab-links">
+		<div class="col-sm-9">
+			<div class="col-sm-2 tab-menu {{ activeCardClass ? 'active':'' }}" 
+                                (click)="cardView()">
+                                <i class="fa fa-th-large"></i> Card View 
+                        </div>
+			<div class="col-sm-2 tab-menu {{ activeListClass ? 'active':'' }}"
+                                (click)="listView()">
+                                <i class="fa fa-bars"></i> List View 
+                        </div>
+			<div class="col-sm-2 tab-menu {{ activeAddCustomerClass ? 'active':'' }}"
+                                (click)="addCustomer()">
+                                <i class="fa fa-plus"></i> Add Customer 
+                        </div>
+		</div>
+		<div class="col-sm-3"> 
+			<input type="text" class="form-control" placeholder="Search"> 
+                </div>
+	</div>
+</div>
+{{activeCardClass}}{{activeListClass}}{{activeAddCustomerClass}}
+<ng-container *ngFor="let customer of customers">
+	<app-customer-details 
+                [customer]="customer"> 
+        </app-customer-details>
+</ng-container>

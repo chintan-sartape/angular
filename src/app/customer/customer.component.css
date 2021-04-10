@@ -1,0 +1,13 @@
+.tab-links {
+  margin-bottom: 30px;
+}
+.tab-menu {
+  padding: 15px 15px;
+  float: left;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+.tab-menu.active {
+  background: #80808066;
+}

@@ -1,0 +1,39 @@
+.top-menu {
+    background: blue;
+    padding: 10px 10px;
+    color: #ffff;
+}
+.logo {
+  max-height: 55px;
+  padding-left: 20px;
+}
+header {
+  margin-top: 10px;
+}
+header a.header {
+  color: #ffff;
+  text-decoration: none;
+}
+.users {
+  max-width: 400px;
+  margin: 50px auto;
+}
+.nav-item.nav-link {
+  color: #ffff;
+  font-weight: 700;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.nav-item.nav-link:hover {
+  color: #000;
+  border-radius: 10px;
+  background-color: #ffff;
+}
+.nav-item.nav-link.active {
+  color: #000;
+  border-radius: 10px;
+  background-color: #ffff;
+}
+.body-container {
+  padding: 0 20px;
+}
