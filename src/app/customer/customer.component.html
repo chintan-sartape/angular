@@ -23,9 +23,13 @@
                 </div>
 	</div>
 </div>
-{{activeCardClass}}{{activeListClass}}{{activeAddCustomerClass}}
+
+<!-- {{activeCardClass}}{{activeListClass}}{{activeAddCustomerClass}} -->
+<!-- <br><br> -->
 <ng-container *ngFor="let customer of customers">
 	<app-customer-details 
-                [customer]="customer"> 
+                [customer]="customer" 
+                [activeCardClass]="activeCardClass"
+                [activeListClass]="activeListClass"> 
         </app-customer-details>
 </ng-container>

@@ -1,1 +1,12 @@
-<p>list-view works!</p>
+<td class="listViewRow" scope="row">{{ customer.id }}</td>
+<td class="listViewRow"><img src="{{ customer.iconUrl }}" class="card-img" height="30" width="30" alt="{{ customer.name }}"></td>
+<td class="listViewRow">{{ customer.name }}</td>
+<td class="listViewRow">{{ customer.location }}</td>
+<td class="listViewRow">{{ customer.orders }} orders</td>
+<td class="listViewRow">{{ customer.category }}</td>
+<td class="listViewRow">
+    <Button class="btn btn-primary" 
+        routerLink = "/customer/profile/{{customer.id }}">View Profile
+    </Button>
+</td>
+      

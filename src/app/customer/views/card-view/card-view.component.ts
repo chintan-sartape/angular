@@ -11,16 +11,18 @@ export class CardViewComponent implements OnInit {
   @Input('customer')
   customer:any;
 
-  constructor(private router: Router) { }
-
-  viewProfile(myParam: any = ''): void {
-    const navigationDetails: any[] = ['/customer/profile'];
-    console.log(myParam)
-    if(myParam.length) {
-      navigationDetails.push(myParam);
-    }
-    this.router.navigate(navigationDetails);
+  constructor(private router: Router) { 
+    console.log('customer card view component')
   }
+
+  // viewProfile(myParam: any = '', cust): void {
+  //   const navigationDetails: any[] = ['/customer/profile'];
+  //   console.log(cust)
+  //   if(cust.length) {
+  //     navigationDetails.push(cust);
+  //   }
+  //   this.router.navigate(navigationDetails);
+  // }
 
   ngOnInit(): void {
   }

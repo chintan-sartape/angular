@@ -14,8 +14,9 @@
         </div>
         <div class="card-footer-btn">
             <Button class="btn btn-primary" 
-                (click)="viewProfile(customer)">View Profile
+                routerLink = "/customer/profile/{{customer.id}}">View Profile
             </Button>
         </div>
     </div>
 </div>
+<!-- (click) = "viewProfile($event, customer)" -->

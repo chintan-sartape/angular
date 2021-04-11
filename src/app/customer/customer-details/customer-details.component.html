@@ -1,7 +1,13 @@
+<div *ngIf="activeCardClass">
+    <app-card-view [customer]="customer" ></app-card-view>
+</div>
 
-<!-- <ng-component *ngIf="activeCardClass; else listBlock"> -->
-    <app-card-view [customer]="customer" [item]="activeCardClass"></app-card-view>
-<!-- </ng-component>
-<ng-template #listBlock> -->
-    <!-- <app-list-view [customer]="customer" [item]="activeListClass"></app-list-view> -->
-<!-- </ng-template> -->
+<div *ngIf="activeListClass">
+    <table class="table table-striped table-bordered mb-0 listViewTable">
+      <tbody>
+        <tr>
+          <app-list-view [customer]="customer"></app-list-view>
+        </tr>
+      </tbody>
+    </table>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-list-view',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListViewComponent implements OnInit {
 
-  constructor() { }
+  @Input('customer')
+  customer:any;
+
+  constructor() {
+    console.log('customer list view component')
+   }
 
   ngOnInit(): void {
   }

@@ -8,9 +8,9 @@ import { CustomerDetailsComponent } from './customer/customer-details/customer-d
 import { LoginComponent } from './authentication/login/login.component';
 import { RegistrationComponent } from './authentication/registration/registration.component';
 import { AboutComponent } from './about/about.component';
-import { CustomerprofileComponent } from './customer/customerprofile/customerprofile.component';
 import { ListViewComponent } from './customer/views/list-view/list-view.component';
 import { CardViewComponent } from './customer/views/card-view/card-view.component';
+import { CustomerprofileComponent } from './customer/views/customerprofile/customerprofile.component';
 
 const routes: Routes = [
   {
@@ -30,7 +30,7 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'customer/profile',
+    path: 'customer/profile/:id',
     component: CustomerprofileComponent
   }
 ];

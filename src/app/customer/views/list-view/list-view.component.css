@@ -1,0 +1,16 @@
+.card-img {
+  height: 75px;
+  width: 85px;
+}
+.listViewTable{
+  margin-bottom: 0;
+  width: 1045px;
+}
+.listViewRow{
+  min-width: 212px;
+  padding: 25px;
+}
+.btn-primary {
+  background-color: blue;
+  border-color: blue;
+}

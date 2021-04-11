@@ -9,19 +9,14 @@ import { Router } from '@angular/router';
 export class CustomerDetailsComponent implements OnInit {
 
   // @Input will bind porperty with the parent data
-  @Input('customer')
-  customer:any;
-
-  // @Input('id')
-  // customerId:number;
-
-  // @Input('name')
-  // customerName: string;
+  @Input('customer') customer: any;
+  @Input('activeCardClass') activeCardClass: boolean;
+  @Input('activeListClass') activeListClass: boolean;
 
   constructor(private router: Router) {
     console.log('customer detail component')
   }
-
+  
   ngOnInit(): void {
   }
 

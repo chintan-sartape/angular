@@ -32,10 +32,9 @@ export class CustomerComponent implements OnInit {
     this.activeCardClass = false
   }
   
-  @Input('item') item: any;
-  
   constructor() { 
     console.log('customer component')
+    // console.log('activeCardClass: '+this.activeCardClass)
   }
 
   ngOnInit(): void {
